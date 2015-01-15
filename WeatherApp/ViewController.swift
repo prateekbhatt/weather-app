@@ -38,11 +38,17 @@ class ViewController: UIViewController {
                 var messageText: AnyObject? = contentArray?[1].componentsSeparatedByString("</span>")[0] as String
                 println(messageText)
             
-                self.message.text = messageText?.stringByReplacingOccurrencesOfString("&deg;", withString: "º")
+                
+                dispatch_async(dispatch_get_main_queue()) {
+                    self.message.text = messageText?.stringByReplacingOccurrencesOfString("&deg;", withString: "º")
+                }
+                
                 
             } else {
                 
-                self.message.text = "Couldn't find that city - please try again"
+                dispatch_async(dispatch_get_main_queue()) {
+                    self.message.text = "Couldn't find that city - please try again"
+                }
             }
         }
         
