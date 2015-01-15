@@ -26,7 +26,10 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="e.g. London" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="At5-y6-Djq">
-                                <rect key="frame" x="47" y="185" width="227" height="30"/>
+                                <rect key="frame" x="16" y="185" width="288" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="288" id="fpZ-o2-dvj"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
@@ -37,8 +40,11 @@
                                     <color key="titleColor" red="0.039647327431024823" green="0.98001499368686873" blue="0.82583692501908346" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="findWeatherButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="bXb-59-Wfd"/>
+                                </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bnl-y4-aJ6">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bnl-y4-aJ6">
                                 <rect key="frame" x="48" y="274" width="225" height="99"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -51,17 +57,23 @@
                             <constraint firstItem="ksX-Bw-Eau" firstAttribute="top" secondItem="At5-y6-Djq" secondAttribute="bottom" constant="21" id="AC9-iE-gU3"/>
                             <constraint firstAttribute="centerX" secondItem="Bnl-y4-aJ6" secondAttribute="centerX" id="IQl-VO-A2X"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Vx7-Nu-XRm" secondAttribute="trailing" constant="-16" id="NlN-1G-Rx4"/>
+                            <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="Bnl-y4-aJ6" secondAttribute="trailing" constant="30" id="PBi-ip-cLb"/>
                             <constraint firstItem="Vx7-Nu-XRm" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-16" id="TKC-E0-cVa"/>
                             <constraint firstItem="At5-y6-Djq" firstAttribute="top" secondItem="wl4-QI-Pd5" secondAttribute="bottom" constant="15" id="aOD-XH-Nee"/>
                             <constraint firstItem="Vx7-Nu-XRm" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="topMargin" id="cay-Bw-7i2"/>
                             <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="Vx7-Nu-XRm" secondAttribute="bottom" id="ea8-Jp-xNX"/>
                             <constraint firstAttribute="centerX" secondItem="ksX-Bw-Eau" secondAttribute="centerX" id="lEx-Pm-FYq"/>
+                            <constraint firstItem="Bnl-y4-aJ6" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="30" id="pI8-R6-7XB"/>
                             <constraint firstItem="wl4-QI-Pd5" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="90" id="qHU-cn-zHO"/>
                             <constraint firstAttribute="centerX" secondItem="wl4-QI-Pd5" secondAttribute="centerX" id="rLX-X2-daJ"/>
                             <constraint firstItem="Bnl-y4-aJ6" firstAttribute="top" secondItem="ksX-Bw-Eau" secondAttribute="bottom" constant="8" id="wqM-3c-y7g"/>
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="city" destination="At5-y6-Djq" id="74t-KA-V7L"/>
+                        <outlet property="message" destination="Bnl-y4-aJ6" id="9Jg-qt-hp6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
