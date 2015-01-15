@@ -13,6 +13,7 @@
 		6E65952A1A67D5FB00C86EA7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E6595291A67D5FB00C86EA7 /* Images.xcassets */; };
 		6E65952D1A67D5FB00C86EA7 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E65952B1A67D5FB00C86EA7 /* LaunchScreen.xib */; };
 		6E6595391A67D5FB00C86EA7 /* WeatherAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E6595381A67D5FB00C86EA7 /* WeatherAppTests.swift */; };
+		6E6595431A67D83200C86EA7 /* weather-background.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E6595421A67D83200C86EA7 /* weather-background.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		6E6595321A67D5FB00C86EA7 /* WeatherAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeatherAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E6595371A67D5FB00C86EA7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6E6595381A67D5FB00C86EA7 /* WeatherAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherAppTests.swift; sourceTree = "<group>"; };
+		6E6595421A67D83200C86EA7 /* weather-background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "weather-background.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 				6E6595221A67D5FB00C86EA7 /* AppDelegate.swift */,
 				6E6595241A67D5FB00C86EA7 /* ViewController.swift */,
 				6E6595261A67D5FB00C86EA7 /* Main.storyboard */,
+				6E6595421A67D83200C86EA7 /* weather-background.png */,
 				6E6595291A67D5FB00C86EA7 /* Images.xcassets */,
 				6E65952B1A67D5FB00C86EA7 /* LaunchScreen.xib */,
 				6E6595201A67D5FB00C86EA7 /* Supporting Files */,
@@ -194,6 +197,7 @@
 			files = (
 				6E6595281A67D5FB00C86EA7 /* Main.storyboard in Resources */,
 				6E65952D1A67D5FB00C86EA7 /* LaunchScreen.xib in Resources */,
+				6E6595431A67D83200C86EA7 /* weather-background.png in Resources */,
 				6E65952A1A67D5FB00C86EA7 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
